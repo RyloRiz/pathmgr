@@ -1,0 +1,35 @@
+{
+	"name": "pathmgr",
+	"version": "0.1.0",
+	"description": "Manager for navigating to directories",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc && npm pack --pack-destination build",
+		"postinstall": "node ./dist/postinstall.js"
+	},
+	"keywords": [
+		"directory",
+		"manager"
+	],
+	"author": "RyloRiz",
+	"license": "ISC",
+	"type": "module",
+	"files": [
+		"/dist"
+	],
+	"repository": {
+		"type": "github:RyloRiz/pathmgr",
+		"url": "https://github.com/RyloRiz/pathmgr"
+	},
+	"dependencies": {
+		"commander": "^11.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.5.1"
+	},
+	"bin": {
+		"pathmgr": "./dist/index.js",
+		"pmr": "./dist/index.js"
+	}
+}
